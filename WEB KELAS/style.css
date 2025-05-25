@@ -1,0 +1,289 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Navbar */
+/* Navigasi */
+.navbar {
+  background-color: #f4f4f4;
+  padding: 10px 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.navbar a.active {
+  color: #007bff;
+}
+
+/* Section Profil */
+.profil-section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.profil-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.profil-box img {
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.profil-box .info {
+  max-width: 500px;
+  text-align: left;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+}
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+}
+.nav-menu{
+    list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  color: #01070e;
+
+}
+.logo {
+  text-align: left; /* opsional */
+}
+
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.nav-links a:hover {
+  color: #000;
+}
+.slider-container {
+  width: 100%;
+  max-width: 600px; /* atau bebas sesuai kebutuhan */
+  aspect-ratio: 3 / 2; /* menjaga rasio container */
+  overflow: hidden;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.slider-track {
+  display: flex;
+  width: 100%;
+  animation: slide 90s infinite;
+}
+
+.slider-track img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ini yang menjaga agar gambar memenuhi container */
+  flex: 0 0 100%;
+}
+
+/* Animasi */
+@keyframes slide {
+  0%   { transform: translateX(0%); }
+  33%  { transform: translateX(-100%); }
+  66%  { transform: translateX(-200%); }
+  100% { transform: translateX(0%); }
+}
+
+
+
+/* Features Section */
+.features {
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.feature-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.feature {
+  background-color: #f4f4f4;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 280px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+}
+
+.feature h3 {
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.feature p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.btn {
+  background-color: #333;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #f2f2f2;
+  border-top: 1px solid #ddd;
+  font-size: 0.9rem;
+  margin-top: 50px;
+}
+/* Umum */
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  padding: 20px;
+  margin: 0;
+  text-align: center;
+}
+
+/* Foto utama */
+.foto-utama {
+  margin-bottom: 40px;
+}
+.foto-utama img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #007BFF;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.foto-utama .nama {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.foto-utama .jabatan {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Grid anggota */
+.anggota-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.frame {
+  width: 200px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 10px;
+  transition: transform 0.2s ease;
+  text-align: center;
+}
+
+.frame img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.nama {
+  font-weight: bold;
+  margin-top: 10px;
+}
+.jabatan {
+  font-size: 14px;
+  color: #777;
+}
